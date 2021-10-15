@@ -1,0 +1,43 @@
+@startuml ClassDiagram
+Title: Diary of Code
+!theme minty
+
+class User {
+  name: String
+  about: String
+  age: Number
+  location: String
+  profilePic: String
+  createdAt: Date
+  likedDairies: [Diary]
+  followers: [User]
+  following: [User]
+
+  addDay()
+  deleteDay()
+  updateDay()
+  follow()
+  unfollow()
+  likeDiary()
+  unlikeDiary()
+}
+
+class Dairy {
+  title: String
+  author: User
+  createdAt: Date
+  day: [Day]
+  likes:[User]
+}
+
+class Day {
+  title: String
+  createdAt: Date
+  body: String
+  technologies: [Badge]
+}
+
+class Badge {
+  title: String
+}
+@enduml
