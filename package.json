@@ -1,0 +1,20 @@
+{
+  "name": "diary",
+  "version": "1.0.0",
+  "description": "it is a diary of code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mervekrblt/diary-of-code.git"
+  },
+  "author": "Merve Karabulut",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mervekrblt/diary-of-code/issues"
+  },
+  "homepage": "https://github.com/mervekrblt/diary-of-code#readme"
+}

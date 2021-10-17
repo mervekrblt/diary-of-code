@@ -9,10 +9,12 @@ class User {
   location: String
   profilePic: String
   createdAt: Date
-  likedDairies: [Diary]
+  diaries: [Dairy]
+  likedDiaries: [Diary]
   followers: [User]
   following: [User]
 
+  createDairy()
   addDay()
   deleteDay()
   updateDay()
@@ -26,18 +28,14 @@ class Dairy {
   title: String
   author: User
   createdAt: Date
-  day: [Day]
+  days: [Day]
   likes:[User]
 }
 
 class Day {
   title: String
-  createdAt: Date
   body: String
-  technologies: [Badge]
+  createdAt: Date
 }
 
-class Badge {
-  title: String
-}
 @enduml
